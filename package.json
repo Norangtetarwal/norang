@@ -12,8 +12,10 @@
   "bugs": {
     "url": "https://hanzla.ga"
   },
-  "homepage": "http://norangTetarwal.github.io/norangTetarwal",
+  "homepage": "http://norangTetarwal.github.io/norang",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build && gulp licenses",
     "test": "react-scripts test",
